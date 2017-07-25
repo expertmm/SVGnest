@@ -103,61 +103,61 @@ text-decoration: none;
 }
 
 .button.start{
-background: #fff url(img/start.svg) no-repeat;
+background: #fff url(../img/start.svg) no-repeat;
 background-size: 1.4em 1.4em;
 background-position: 1.8em 50%;
 padding-left: 3.7em;
 }
 
 .button.spinner{
-background: #fff url(img/spin.svg) no-repeat;
+background: #fff url(../img/spin.svg) no-repeat;
 background-size: 1.4em 1.4em;
 background-position: 1.8em 50%;
 padding-left: 3.7em;
 }
 
 .button.upload{
-background: #fff url(img/upload.svg) no-repeat;
+background: #fff url(../img/upload.svg) no-repeat;
 background-size: 1em 1em;
 background-position: 2.2em 50%;
 padding-left: 4em;
 }
 
 .button.download{
-background: #fff url(img/download.svg) no-repeat;
+background: #fff url(../img/download.svg) no-repeat;
 background-size: 1em 1em;
 background-position: 2.2em 50%;
 padding-left: 4em;
 }
 
 .button.code{
-background: #fff url(img/code.svg) no-repeat;
+background: #fff url(../img/code.svg) no-repeat;
 background-size: 1.2em 1.2em;
 background-position: 2em 50%;
 padding-left: 3.9em;
 }
 
 .button.config{
-background: #fff url(img/settings.svg) no-repeat;
+background: #fff url(../img/settings.svg) no-repeat;
 background-size: 1.2em 1.2em;
 background-position: 2em 50%;
 padding-left: 3.9em;
 }
 
 .button.close{
-background: #fff url(img/close.svg) no-repeat;
+background: #fff url(../img/close.svg) no-repeat;
 background-size: 2em 2em;
 background-position: 1.8em 50%;
 padding-left: 3.9em;
 }
 
 .button.zoomin{
-background: #fff url(img/zoomin.svg) no-repeat;
+background: #fff url(../img/zoomin.svg) no-repeat;
 background-size: 1.5em 1.5em;
 }
 
 .button.zoomout{
-background: #fff url(img/zoomout.svg) no-repeat;
+background: #fff url(../img/zoomout.svg) no-repeat;
 background-size: 1.5em 1.5em;
 }
 
@@ -389,7 +389,7 @@ clear: both;
 margin-top: 2em;
 }
 
-/* svg styles*/ 
+/* svg styles*/
 
 #select{
 margin-top: 2em;
@@ -467,7 +467,7 @@ stroke: #617bb5 !important;
 #messagewrapper{
 width: 50em;
 overflow: hidden;
-background: #8498d1 url(img/close.svg) no-repeat;
+background: #8498d1 url(../img/close.svg) no-repeat;
 background-position: 99% 0.5em;
 background-size: 3em 3em;
 line-height: 4em;
@@ -609,7 +609,7 @@ font-weight: bold;
 	#svgnest, #messagewrapper{
 	width: 60em;
 	}
-	
+
 	.progress{
 	width: 61%;
 	}
@@ -620,28 +620,28 @@ font-weight: bold;
 	#svgnest, #messagewrapper{
 	width: 50em;
 	}
-	
+
 	#svgnest{
 	margin-top: 5em;
 	}
-	
+
 	#svgnest .logo{
 	width: 25%;
 	}
-	
+
 	#controls{
 	margin-top: 3em;
 	}
-	
+
 	#splash .logo{
 		width: 60%;
 		margin: 0 20%;
 	}
-	
+
 	h1.label{
 	font-size: 3em;
 	}
-	
+
 	.progress{
 	width: 75%;
 	}
@@ -655,36 +655,36 @@ font-weight: bold;
 	#splash{
 	width: 100%;
 	}
-	
+
 	#splash .logo{
 	width: 40%;
 	margin-left: 30%;
 	float: left;
 	}
-	
+
 	#splash h1.title{
 		margin: 0;
 		font-size: 2em;
 	}
-	
+
 	#splash .subscript{
 		font-size: 1em;
 	}
-	
+
 	body { font-size: 18px; }
-	
+
 	#splash .nav{
 	width: 60%;
 	margin-left: 20%;
 	margin-top: 2em;
 	}
-	
+
 	#splash .nav li{
 	float: none;
 	display: block;
 	margin-top: 1em;
 	}
-	
+
 	#faq{
 		padding: 3em;
 	}
