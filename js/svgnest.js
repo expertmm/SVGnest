@@ -347,7 +347,7 @@
 			var spawncount = 0;
 			p._spawnMapWorker = function (i, cb, done, env, wrk){
 				// hijack the worker call to check progress
-				progress = spawncount++/nfpPairs.length;
+				progress = (spawncount++)/nfpPairs.length;
 				return Parallel.prototype._spawnMapWorker.call(p, i, cb, done, env, wrk);
 			}
 
