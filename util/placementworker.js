@@ -289,7 +289,7 @@ function PlacementWorker(binPolygon, paths, ids, rotations, config, nfpCache){
 	};
 
 }
-window.PlacementWorker = PlacementWorker;
+(typeof window !== 'undefined' ? window : this).PlacementWorker = PlacementWorker;
 
 // clipperjs uses alerts for warnings
 function alert(message) { 

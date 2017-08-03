@@ -1888,4 +1888,4 @@
 			return rotated;
 		}
 	};
-}(window));
+})(typeof window !== 'undefined' ? window : this);
