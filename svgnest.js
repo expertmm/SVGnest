@@ -335,22 +335,23 @@
 					searchEdges: config.exploreConcave,
 					useHoles: config.useHoles
 				},
-				evalPath: 'util/eval.js'
+				evalPath: null,
 			});
-			
-			p.require('matrix.js');
-			p.require('geometryutil.js');
-			p.require('placementworker.js');
-			p.require('clipper.js');
-			
+
 			var self = this;
 			var spawncount = 0;
+            p.getWorkerSource = function(cb, env) {
+                var deps = root.SvgNest.workerCode;
+                var code = Parallel.prototype.getWorkerSource.call(p, cb, env);
+                return deps + code;
+            };
 			p._spawnMapWorker = function (i, cb, done, env, wrk){
 				// hijack the worker call to check progress
 				progress = spawncount++/nfpPairs.length;
 				return Parallel.prototype._spawnMapWorker.call(p, i, cb, done, env, wrk);
 			}
 			
+            console.log('first map start 222');
 			p.map(function(pair){
 				if(!pair || pair.length == 0){
 					return null;
@@ -538,15 +539,15 @@
 					env: {
 						self: worker
 					},
-					evalPath: 'util/eval.js'
-				});
-				
-				p2.require('json.js');
-				p2.require('clipper.js');
-				p2.require('matrix.js');
-				p2.require('geometryutil.js');
-				p2.require('placementworker.js');				
-				
+					evalPath: null,
+				});				
+
+                p2.getWorkerSource = function(cb, env) {
+                    var deps = root.SvgNest.workerCode;
+                    var code = Parallel.prototype.getWorkerSource.call(p2, cb, env);
+                    return deps + code;
+                };				
+
 				p2.map(worker.placePaths).then(function(placements){
 					if(!placements || placements.length == 0){
 						return;
