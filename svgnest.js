@@ -577,7 +577,7 @@
 								numPlacedParts++;
 							}
 						}
-						displayCallback(self.applyPlacement(best.placements), placedArea/totalArea, numPlacedParts+'/'+numParts);
+						displayCallback(self.applyPlacement(best.placements), placedArea/totalArea, numPlacedParts, numParts);
 					}
 					else{
 						displayCallback();
