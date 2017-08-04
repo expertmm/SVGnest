@@ -1888,4 +1888,4 @@
 			return rotated;
 		}
 	};
-})(typeof window !== 'undefined' ? window : this);
+})(typeof window !== 'undefined' ? window : self);
