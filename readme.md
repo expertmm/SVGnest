@@ -4,6 +4,12 @@
 
 **Demo:** http://svgnest.com
 
+## Reasons for fork
+* Convert to C++ for use in desktop applications, especially Slic3r
+
+## Known Issues
+* Convert to C++ then notify Slic3r team via https://github.com/alexrj/Slic3r/issues/3237
+
 (requires SVG and webworker support). Mobile warning: running the demo is CPU intensive.
 
 references (PDF):
