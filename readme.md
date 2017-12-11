@@ -5,7 +5,7 @@
 **Demo:** http://svgnest.com
 
 ## Reasons for fork
-* Convert to perl for use in desktop applications, especially Slic3r
+* Convert to C++ for use in desktop applications, especially Slic3r (which is migrating from perl to C++)
 
 ## Changes in perl version
 * convert svg from index.html to example-data.yml using http://codeamaze.com/xml-converter/xml-to-yaml-converter then remove undercores from output
